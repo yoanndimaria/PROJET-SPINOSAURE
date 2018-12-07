@@ -1,3 +1,4 @@
+<?PHP $login = 1; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,8 +11,8 @@
 <div id="top" class="container">
     <div class="bottom">
         <div class="botright">
-            <h1>Ma Table, Service complet pour fidéliser vos clients</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Accusamus consectetur temporibus voluptatibus. Culpa,
+            <h1>Fidéliser vos clients</h1>
+            <p>Ma Table, Service complet pour fidéliser vos clients</br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Accusamus consectetur temporibus voluptatibus. Culpa,
                 <br> cupiditate, neque! Aliquid commodi cumque dolorum earum inventore iste <br>minus recusandae reprehenderit rerum sit. Aut, necessitatibus quis.</p>
 
         </div>
@@ -22,7 +23,9 @@
 	    <div class="txtCenter">
 	        <h1>THE RESCUE SQUAD’S ACHIEVEMENTS</h1>
 	        <div class="textBottom">
-	            Nihil est enim virtute amabilius, nihil quod magis adliciat ad fffff fqshsts qrsthejyt qze(srey  ertrdthy rytfdtght fthj
+	            Créez immédiatement votre compte restaurant Ma Table
+Puis, en quelques clics, vous créez votre site internet personnalisé, en suivant les étapes permettant de décrire votre établissement
+
 	        </div>
 	    </div>
 	</section>
@@ -50,7 +53,25 @@
 
 		</div>
 	</section>
+	<section id="message">
+    <div id="contentLeft">
+        <div id="textMessage">
+            <h3>Propinqua campestrem diu sed magnis</h3>
+            <p>
+                Propinqua campestrem diu sed magnis quidem milite cum magnis Pamphyliam latrones deviis
+                intactam et intactam inpares milite praesidiis magna cum magna populationum petivere igitur
+                tramitibus magnis propinqua frequentibus caedium sed latrones Pamphyliam magna parte diu
+            </p>
+        </div>
+    </div>
+    <div id="contentRight">
+        <div >
+			<img id="imgMessage" src="/images/menu.svg" alt="">
+        </div>
+    </div>
+</section>
 	<section id="form">
+		<h2>Ajouter votre établissement</h2>
 		<div class="container">
 	        <input type="text" class="placement" placeholder="Nom de l'établissement">
 	        <input type="text" class="placement" placeholder="Adresse email">

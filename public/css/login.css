@@ -1,17 +1,21 @@
-*{
-    margin: 0;
-    box-sizing: border-box;
-}
-#formulaire{
+body{
     width: 100vw;
     height: 100vh;
-    background-color: grey;
+    margin: 0;
+    background-image: url('../images/salad-2068220_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#formulaire{
+    border-radius: 10px;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 #contentform{
-    width: 550px;
+    width: 75%;
     background-color: white;
     border-radius: 5px;
     padding: 20px 70px 20px 70px;
@@ -25,6 +29,7 @@
     padding: 0 0 10px 0;
 }
 #formContent{
+    margin-bottom: 10px;
     text-align: center;
     width: 100%;
     padding: 0 10px 0 10px;
@@ -44,12 +49,16 @@
 .formConnexion{
     margin: 10px 0 10px 0;
 }
+h1 {
+    font-size: 31px;
+    margin-bottom: 15px;
+}
 #connexion{
     display: flex;
     justify-content: center;
     padding: 10px 0;
     width: 100%;
-    background-color: #388030;
+    background-color: #F0AA42;
     border-radius: 3px;
     color: white;
 }

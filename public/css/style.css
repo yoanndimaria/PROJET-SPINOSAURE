@@ -1,6 +1,7 @@
 @import "reset.css";
 
 body {
+	max-width: 100vw;
 	width: 100vw;
 	font-family: 'Montserrat', sans-serif;
 	display: flex;
@@ -10,8 +11,8 @@ body {
 }
 
 header {
-	position: fixed;
 	top:0px;
+	position: fixed;
 	z-index: 50;
 	width: calc(100vw - 75px);
 	height: 75px;
@@ -52,6 +53,15 @@ header nav ul li a:hover {
 	background: white;
 	color: #F0AA42;
 }
+
+@media all and (max-width: 885px){
+    header nav #logo {
+    	width: 0;
+    	height: 0;
+    	opacity: 0;
+    }
+}
+
 section {
 	z-index: 25;
 }
@@ -69,8 +79,9 @@ section#form {
     width: 100%;
     background: rgb(247, 248, 250);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
 }
 
@@ -81,7 +92,10 @@ section#form .container {
     justify-content: center;
 	width: 50%;
 }
-
+h2 {
+	font-size: 24px;
+	margin-bottom: 15px;
+}
 .placement {
 	flex-basis: 1;
     border-radius: 5px;
@@ -176,6 +190,7 @@ input[type="submit"] {
     }
     .imgText{
         flex-direction: column;
+        align-items: center;
     }
     .imgPlacement{
         margin: 20px 0 20px 0;
@@ -191,6 +206,9 @@ input[type="submit"] {
     }
     .placement {
     	width: 100%;
+    }
+    .imgPlacement {
+    	width: 75%;
     }
 }
 
@@ -239,4 +257,112 @@ input[type="submit"] {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 
+}
+
+#contentLeft ,#contentRight{
+    width: 50%;
+}
+#message{
+	width: 100%;
+    background-color: rgb(175, 222, 253);
+    padding: 50px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+#contentLeft{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#textMessage{
+    width: 70%;
+}
+#contentRight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#imgMessage{
+    width: 150px;
+}
+@media screen and (max-width: 880px) {
+    #textMessage{
+        width: 100%;
+    }
+    #contentLeft {
+        width: 70%;
+    }
+    #contentRight{
+        width: 30%;
+    }
+    #imgMessage{
+        margin: unset;
+    }
+}
+@media screen and (max-width: 750px){
+    #message{
+        flex-direction: column;
+        padding: 10px 10px 0 10px;
+        align-items: center;
+    }
+    #contentLeft{
+        width: 100%;
+        justify-content: center;
+    }
+    #textMessage{
+        width: 75%;
+        margin-bottom: 20px;
+    }
+    #contentRight{
+        width: 80%;
+    }
+    #imgMessage{
+        width: 100%;
+    }
+    #textMessage > p{
+        margin: 5px auto 0 auto;
+        width: 90%;
+    }
+}
+
+
+footer .foottable{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 250px;
+    background-color: black;
+    color: white;
+}
+footer a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-decoration: none;
+    padding-top: 5px;
+}
+footer .Reseaux{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+footer .Advantages{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+footer .Society{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+footer h1{
+    margin-bottom: 10px;
 }

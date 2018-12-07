@@ -1,10 +1,13 @@
 <header>
 	<nav>
-		<img id="logo" src="images/logoMa-Table.svg" alt="Logo Ma-Table">
-
+		<a href="/">
+			<img id="logo" src="images/logoMa-Table.svg" alt="Logo Ma-Table">
+		</a>
 		<ul>
 			<li>
-				<a href="">Mon compte</a>
+				<?PHP if($login == 1) { ?>
+				<a href="/login.php">Mon compte</a>
+				<?PHP } ?>
 			</li>
 		</ul>
 	</nav>

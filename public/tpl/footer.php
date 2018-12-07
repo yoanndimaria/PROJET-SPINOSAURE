@@ -1,3 +1,3 @@
-<footer>
-	FOOTER
+<footer class="foottable">
+	
 </footer>
