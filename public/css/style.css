@@ -1,0 +1,242 @@
+@import "reset.css";
+
+body {
+	width: 100vw;
+	font-family: 'Montserrat', sans-serif;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+header {
+	position: fixed;
+	top:0px;
+	z-index: 50;
+	width: calc(100vw - 75px);
+	height: 75px;
+	padding: 0 50px;
+}
+
+header nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 40px;
+	align-items: center;
+}
+
+header nav #logo {
+	width: 120px;
+}
+
+header nav ul {
+	display: flex;
+	flex-direction: row;
+}
+
+header nav ul li {
+	list-style: none;
+}
+
+header nav ul li a {
+	border: 1px solid white;
+	border-radius: 5px;
+	padding: 10px 30px;
+	color: white;
+	margin: 0 20px;
+	text-decoration: none;
+}
+
+header nav ul li a:hover {
+	background: white;
+	color: #F0AA42;
+}
+section {
+	z-index: 25;
+}
+section#home {
+	height: 100vh;
+	width: 100%;
+	z-index: 0;
+	background-image: url('../images/MaTableBackground.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+section#form {
+	padding: 50px 0;
+    width: 100%;
+    background: rgb(247, 248, 250);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section#form .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+	width: 50%;
+}
+
+.placement {
+	flex-basis: 1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: calc(50% - 50px);
+}
+
+section#presentation{
+    display: flex;
+    justify-content: center;
+    color: #978375;
+}
+
+section#presentation2{
+    color: #978375;
+    width: 100%;
+}
+
+.txtCenter{
+    padding: 75px 0 75px 0;
+    width: 50%;
+    text-align: center;
+}
+.textBottom{
+    margin-top: 80px;
+}
+h1{
+    font-size: 35px;
+    font-weight: 900;
+}
+.textBottom{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 25px;
+}
+.imgText{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin-bottom: 100px;
+}
+.imgPlacement{
+	width: 25%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.imgContent{
+    height: 75px;
+}
+.containerimg{
+    display: flex;
+    justify-content: center;
+}
+.Reservation{
+    background: url("../images/Ma-Table-Reservation.svg") center no-repeat;
+}
+.Gestion{
+    background: url("../images/Ma-Table-Gestion.svg") center no-repeat;
+}
+.Fidelisation{
+    background: url("../images/Ma-Table-Fidelisation.svg") center no-repeat;
+}
+.number{
+    font-size: 60px;
+    color: #fd6351;
+    margin: 20px 0 30px 0;
+}
+
+input {
+	outline: none;
+	border: 1px solid #F0AA42;
+	color: black;
+}
+
+input[type="submit"] {
+	background: white;
+	color: #F0AA42;
+
+}
+
+.description{
+	margin-top: 35px;
+	font-size: 18px;
+    color: #978375;
+}
+@media all and (max-width: 885px){
+    .txtCenter{
+        width: 90%;
+        padding: 50px 0 50px 0;
+    }
+    .imgText{
+        flex-direction: column;
+    }
+    .imgPlacement{
+        margin: 20px 0 20px 0;
+    }
+}
+
+@media all and (max-width: 700px) {
+    section#form{
+    	margin: 100px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .placement {
+    	width: 100%;
+    }
+}
+
+#top .container{
+    height: 721px;
+    width: 100%;
+    background-image: url("top.jpg");
+    background-size: cover;
+}
+#top .log{
+    display: flex;
+    justify-content: space-between;
+}
+#top #logo{
+    padding: 30px;
+}
+#top p {
+	margin: 20px 0;
+}
+#top #placement{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    padding: 5px;
+    padding-bottom: 5px;
+    color: white;
+    border: 2px solid;
+    border-radius: 10px;
+    margin-right: 20px;
+
+}
+#top .bottom{
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+}
+#top .botright{
+    color: white;
+    background-color: black;
+    opacity: 0.8;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+}

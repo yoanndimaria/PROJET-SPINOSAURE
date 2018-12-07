@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+#formulaire{
+    width: 100vw;
+    height: 100vh;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contentform{
+    width: 550px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px 70px 20px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#textHeadForm{
+    text-align: center;
+    padding: 0 0 10px 0;
+}
+#formContent{
+    text-align: center;
+    width: 100%;
+    padding: 0 10px 0 10px;
+}
+.bold{
+    font-weight: bold;
+}
+.entreeConnexion{
+    width: 100%;
+    border-radius: 3px;
+    border: 1px grey solid;
+    padding: 15px 0 15px 5px;
+}
+.entreeConnexion:first-child{
+    margin-bottom: 10px;
+}
+.formConnexion{
+    margin: 10px 0 10px 0;
+}
+#connexion{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    width: 100%;
+    background-color: #388030;
+    border-radius: 3px;
+    color: white;
+}
+.remenberMe{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 0 5px 0;
+}
+.checkRememberMe{
+    margin-right: 10px;
+}
+#idForget{
+    text-align: left;
+}
+#formContent a{
+    text-decoration: unset;
+    color: #5b53ee;
+}
+@media screen and (max-width: 550px) {
+    #contentform{
+        border-radius: unset;
+        padding: 20px 0 20px 0;
+    }
+}
